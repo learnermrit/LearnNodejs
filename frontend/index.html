@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORS Demo</title>
+</head>
+<body>
+    <!--just to check CORS-->
+    <script>
+        fetch('http://localhost:3000/products')
+            .then(response => response.json())
+            .then(data => console.log(data))
+            .catch(error => console.error('CORS Error:', error));
+    </script>
+</body>
+</html>
